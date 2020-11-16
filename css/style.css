@@ -78,6 +78,7 @@ body > nav.navbar {
 
 nav#nav-bar a {
     padding: .25rem .75rem;
+    transition: 0.2s all ease-in-out;
 }
 
 .hamburger.is-active:hover {
@@ -95,6 +96,10 @@ nav#nav-bar a {
 #nav-bar > button > span{
     width: 1.6rem;
     height: 1.2rem;
+}
+
+#nav-bar a:hover{
+    transform: scale(1.05);
 }
 
 #nav-bar > button > span > span.hamburger-inner, #nav-bar > button > span > span.hamburger-inner::before, #nav-bar > button > span > span.hamburger-inner::after {
@@ -406,6 +411,13 @@ footer .rights h4{
         float: left;
     }
 
+    .projects img {
+        display: inline;
+        float: right;
+        max-width: 90%;
+        padding-top: 150px;
+    }
+
     .experience p {
         font-size: 24px;
         line-height: 20px;
@@ -440,8 +452,9 @@ footer .rights h4{
     }
 
     .projects img {
-        float: left;
+        float: center;
         max-width: 90%;
+        padding-top: 0px;
     }
 
     .column {
